@@ -61,7 +61,7 @@ def getrollcalc(attributetxt, chkstateskill):
         if chkstateskill.get():
             attributemod = attributemod + int(proficiencytxt.get())
         root.clipboard_clear()
-        if chk_stateadvantage:
+        if chk_stateadvantage.get():
             root.clipboard_append("/roll 2d20 + " + str(attributemod))
             a = Label(root, text="/roll 2d20 + " + str(attributemod))
             a.pack(side="bottom")
